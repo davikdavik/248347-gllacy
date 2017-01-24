@@ -66,6 +66,34 @@
 		</div>
 	</header>
 	<main class="container">
+		<div class="breadcrumbs">
+		<p><a href="index.html">Главная</a> > <a href="#">Каталог</a> > Сливочное</p>
+		</div>
+		<h1>Сливочное мороженое</h1>
+		<form class="catalog-sorting-form" action="/echo" method="post">
+			<label for="sorting-list">Сортировка:</label>
+			<select class="sorting" id="sorting-list" name="sorting-list" >
+				<option value="popular"selected>по популярности</option>
+				<option value="price-up">сначала недорогие</option>
+				<option value="price-down">сначала дорогие</option>
+				<option value="fat">по жирности</option>
+			</select>
+			<label for="price">Цена: 100 руб. - 500 руб.</label>
+			<input type="range" id="price" name="price" min="100" max="500">
+			<label for="fat">Жирность:</label>
+			<input type="radio" id="fat" name="fat" value="0">0% 
+			<input type="radio" id="fat" name="fat" value="0-10">до 10% 
+			<input type="radio" id="fat" name="fat" value="10-30">до 30% 
+			<input type="radio" id="fat" name="fat" value="30">выше 30% 
+			<br>
+			<label for="filler">Наполнители:</label>
+			<input type="checkbox" name="filler" value="chocolate" checked> шоколадные
+			<input type="checkbox" name="filler" value="sugar" checked> сахарные присыпки
+			<input type="checkbox" name="filler" value="fruit" > фрукты
+			<input type="checkbox" name="filler" value="syrup" > сиропы
+			<input type="checkbox" name="filler" value="jam" > джемы
+			<button class="buttons" type="submit">Применить</button>
+		</form>
 	</main>
 	<footer>
 		<div class="container">
