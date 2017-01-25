@@ -7,7 +7,7 @@
 <body>
 	<header class="page-header">
 		<div class="container">
-			<a class="logo">
+			<a class="logo" href="index.html">
 				<img src="img/index-logo.png" width="200" height="50" alt="Gllacy Shop">
 			</a>
 			<nav class="main-navigation">
@@ -19,7 +19,7 @@
 								<a href="#">Новинки</a>
 							</li>
 							<li>
-								<a href="catalog.html">Сливочное</a>
+								<a>Сливочное</a>
 							</li>
 							<li>
 								<a href="#">Щербеты</a>
@@ -41,37 +41,44 @@
 				</ul>
 			</nav>
 			<div class="user-block">
-				<a class="search" href="#search">Поиск</a>
-				<div class="search-hover">
-					<input type="text" id="search" name="search" placeholder="Что ищем?">
+				<div class="search-block">
+					<a class="search" href="#search">Поиск</a>
+					<div class="search-hover">
+						<input type="text" id="search" name="search" placeholder="Что ищем?">
+					</div>
 				</div>
-				<a class="sign-in" href="#sign-in">Вход</a>
-				<div class="sign-in-hover">
-					<form class="newsletter-form" action="/echo" method="post">
-						<input type="email" id="email" name="email" placeholder="Электронная почта">
-						<input type="password" id="password" name="password" placeholder="Пароль">
-						<button class="buttons" type="submit">Войти</button>
-					</form>
-					<a href="#">Забыли пароль?</a>
-					<a href="#">Новая регистрация</a>
+				<div class="sign-in-block">
+					<a class="sign-in" href="#sign-in">Вход</a>
+					<div class="sign-in-hover">
+						<form class="newsletter-form" action="/echo" method="post">
+							<input type="email" id="email" name="email" placeholder="Электронная почта">
+							<input type="password" id="password" name="password" placeholder="Пароль">
+							<button class="buttons" type="submit">Войти</button>
+						</form>
+						<a href="#">Забыли пароль?</a>
+						<a href="#">Новая регистрация</a>
+					</div>
 				</div>
-				<a class="cart" href="#cart">Корзина</a>
-				<div class="cart-hover">
-					<a class="close" href="#">Удалить</a>
-					<img src="img/item-small.png" width="20" height="20">
-					<span> Пломбир с апельсиновым джемом</span>
-					<span>1.5 кг х 200 руб.</span>
-					<span>300 руб.</span>
-					<p>
-					<a class="close" href="#">Удалить</a>
-					<img src="img/item-small.png" width="20" height="20">
-					<span> Пломбир с апельсиновым джемом</span>
-					<span>1.5 кг х 200 руб.</span>
-					<span>300 руб.</span>
-					</p>
-					<hr>
-					<p class="total">Итого: 750 руб.</p>
-					<a class="buttons" href="#">Оформить заказ</a>
+				<div class="cart-block">
+					<a class="cart" href="#cart">Корзина</a>
+					<div class="cart-hover">
+						<div class="cart-item">
+							<a class="close" href="#">Удалить</a>
+							<img src="img/item-small.png" width="20" height="20" alt="Пломбир с апельсиновым джемом">
+							<span class="cart-text"> Пломбир с апельсиновым джемом</span>
+							<span class="cart-quantity-price">1.5 кг х 200 руб.</span>
+							<span class="cart-item-total">300 руб.</span>
+						</div>
+						<div class="cart-item">
+							<a class="close" href="#">Удалить</a>
+							<img src="img/item-small.png" width="20" height="20" alt="Пломбир с апельсиновым джемом">
+							<span class="cart-text"> Пломбир с апельсиновым джемом</span>
+							<span class="cart-quantity-price">1.5 кг х 200 руб.</span>
+							<span class="cart-item-total">300 руб.</span>
+						</div>
+						<p class="cart-total">Итого: 750 руб.</p>
+						<a class="buttons" href="#">Оформить заказ</a>
+					</div>
 				</div>
 			</div>
 		</div>
@@ -91,25 +98,28 @@
 			<form class="catalog-sorting-form" action="/echo" method="post">
 				<label for="sorting-list">Сортировка:</label>
 				<select class="sorting" id="sorting-list" name="sorting-list" >
-					<option value="popular"selected>по популярности</option>
+					<option value="popular" selected>по популярности</option>
 					<option value="price-up">сначала недорогие</option>
 					<option value="price-down">сначала дорогие</option>
 					<option value="fat">по жирности</option>
 				</select>
 				<label for="price">Цена: 100 руб. - 500 руб.</label>
 				<input type="range" id="price" name="price" min="100" max="500">
-				<label for="fat">Жирность:</label>
-				<input type="radio" id="fat" name="fat" value="0">0% 
-				<input type="radio" id="fat" name="fat" value="0-10">до 10% 
-				<input type="radio" id="fat" name="fat" value="10-30">до 30% 
-				<input type="radio" id="fat" name="fat" value="30">выше 30% 
-				<br>
-				<label for="filler">Наполнители:</label>
-				<input type="checkbox" name="filler" value="chocolate" checked> шоколадные
-				<input type="checkbox" name="filler" value="sugar" checked> сахарные присыпки
-				<input type="checkbox" name="filler" value="fruit" > фрукты
-				<input type="checkbox" name="filler" value="syrup" > сиропы
-				<input type="checkbox" name="filler" value="jam" > джемы
+				<fieldset class="sorting-fieldset">
+					<legend>Жирность:</legend>
+					<input type="radio" id="fat0" name="fat" value="0">0% 
+					<input type="radio" id="fat0-10" name="fat" value="0-10">до 10% 
+					<input type="radio" id="fat10-30" name="fat" value="10-30">до 30% 
+					<input type="radio" id="fat30" name="fat" value="30">выше 30% 
+				</fieldset>
+				<fieldset class="sorting-fieldset">
+					<legend>Наполнители:</legend>
+					<input type="checkbox" name="filler" value="chocolate" checked> шоколадные
+					<input type="checkbox" name="filler" value="sugar" checked> сахарные присыпки
+					<input type="checkbox" name="filler" value="fruit" > фрукты
+					<input type="checkbox" name="filler" value="syrup" > сиропы
+					<input type="checkbox" name="filler" value="jam" > джемы
+				</fieldset>
 				<button class="buttons" type="submit">Применить</button>
 			</form>
 		</div>
@@ -206,10 +216,10 @@
 				<a class="social-button vkontakte" href="#">Вконтакте</a>            
 			</div>
 			<div class="footer-navigation">
-				<a class="position-left" href="#">Для поставщиков</a>
-				<a class="position-right" href="#">Наши документы</a>
-				<a class="position-left" href="#">О производстве</a>
-				<a class="position-right" href="#">Экологические стандарты</a>
+				<a class="footer-navigation-item heart" href="#">Для поставщиков</a>
+				<a class="footer-navigation-item" href="#">Наши документы</a>
+				<a class="footer-navigation-item" href="#">О производстве</a>
+				<a class="footer-navigation-item" href="#">Экологические стандарты</a>
 			</div>
 			<div class="copyright">	
 				<a href="https://htmlacademy.ru"><img src="img/html-academy-logo.png" width="80" height="40" alt="HTML Academy"></a>	 
