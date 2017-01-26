@@ -41,44 +41,51 @@
 				</ul>
 			</nav>
 			<div class="user-block">
-				<a class="search" href="#search">Поиск</a>
-				<div class="search-hover">
-					<input type="text" id="search" name="search" placeholder="Что ищем?">
+				<div class="search-block">
+					<a class="search" href="#search">Поиск</a>
+					<div class="search-hover">
+						<input type="text" id="search" name="search" placeholder="Что ищем?">
+					</div>
 				</div>
-				<a class="sign-in" href="#sign-in">Вход</a>
-				<div class="sign-in-hover">
-					<form class="newsletter-form" action="/echo" method="post">
-						<input type="email" id="email" name="email" placeholder="Электронная почта">
-						<input type="password" id="password" name="password" placeholder="Пароль">
-						<button class="buttons" type="submit">Войти</button>
-					</form>
-					<a href="#">Забыли пароль?</a>
-					<a href="#">Новая регистрация</a>
+				<div class="sign-in-block">
+					<a class="sign-in" href="#sign-in">Вход</a>
+					<div class="sign-in-hover">
+						<form class="newsletter-form" action="/echo" method="post">
+							<input type="email" id="email" name="email" placeholder="Электронная почта">
+							<input type="password" id="password" name="password" placeholder="Пароль">
+							<button class="buttons" type="submit">Войти</button>
+						</form>
+						<a href="#">Забыли пароль?</a>
+						<a href="#">Новая регистрация</a>
+					</div>
 				</div>
-				<a class="cart" href="#cart">Корзина</a>
-				<div class="cart-hover">
-					<a class="close" href="#">Удалить</a>
-					<img src="img/item-small.png" width="20" height="20">
-					<span> Пломбир с апельсиновым джемом</span>
-					<span>1.5 кг х 200 руб.</span>
-					<span>300 руб.</span>
-					<p>
-					<a class="close" href="#">Удалить</a>
-					<img src="img/item-small.png" width="20" height="20">
-					<span> Пломбир с апельсиновым джемом</span>
-					<span>1.5 кг х 200 руб.</span>
-					<span>300 руб.</span>
-					</p>
-					<hr>
-					<p class="total">Итого: 750 руб.</p>
-					<a class="buttons" href="#">Оформить заказ</a>
+				<div class="cart-block">
+					<a class="cart" href="#cart">Корзина</a>
+					<div class="cart-hover">
+						<div class="cart-item">
+							<a class="close" href="#">Удалить</a>
+							<img src="img/item-small.png" width="20" height="20" alt="Пломбир с апельсиновым джемом">
+							<span class="cart-text"> Пломбир с апельсиновым джемом</span>
+							<span class="cart-quantity-price">1.5 кг х 200 руб.</span>
+							<span class="cart-item-total">300 руб.</span>
+						</div>
+						<div class="cart-item">
+							<a class="close" href="#">Удалить</a>
+							<img src="img/item-small.png" width="20" height="20" alt="Пломбир с апельсиновым джемом">
+							<span class="cart-text"> Пломбир с апельсиновым джемом</span>
+							<span class="cart-quantity-price">1.5 кг х 200 руб.</span>
+							<span class="cart-item-total">300 руб.</span>
+						</div>
+						<p class="cart-total">Итого: 750 руб.</p>
+						<a class="buttons" href="#">Оформить заказ</a>
+					</div>
 				</div>
 			</div>
 		</div>
 		<div class="container">
 			<div class="contacts-block">
 				<p class="schedule">С 10 до 20, ежедневно</p>
-				<a class="phone" href="tel:88124502525">8 812 450-25-25</p>
+				<a class="phone" href="tel:88124502525">8 812 450-25-25</a>
 			</div>
 		</div>
 	</header>
@@ -133,7 +140,7 @@
 				<img src="img/item4.png" width="150" height="150" alt="Сливочное крем-брюле с карамельной подливкой">
 				<p class="price">415 &#8381;/кг</p>
 				<a href="#">Сливочное крем-брюле с карамельной подливкой</a> 
-			</div>
+			</article>
 		</div>
 		<section class="about-us">
 			<h2>Магазин Глейси - это онлайн и офлайн магазин по продаже мороженого собственного производства наразвес</h2>
@@ -159,7 +166,7 @@
 			<div class="newsletter">
 				<p>Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)</p>
 				<form class="newsletter-form" action="/echo" method="post">
-					<input type="email" id="email" name="email" placeholder="Электронная почта">
+					<input type="email" id="newsletter-email" name="email" placeholder="Электронная почта">
 					<button class="buttons" type="submit">Отправить</button>
 				</form>
 			</div>
@@ -169,9 +176,9 @@
 			<div class="contacts">
 				<span class="text">Адрес главного офиса и офлайн-магазина:</span>
 				<span class="contacts">ул. Большая Конюшенная 19/8, Санкт-Петербург</span>
-				<span class="text">Для заказов по телефону:
+				<span class="text">Для заказов по телефону:</span>
 				<a class="contacts" href="tel:88124502525">8 812 450-25-25</a>
-				<span "text">(c 10 до 20 ежедневно)</span>
+				<span class="text">(c 10 до 20 ежедневно)</span>
 				<a class="buttons" href="#">Форма обратной связи</a>
 			</div>
 		</div>
@@ -179,7 +186,7 @@
 			<h2>Мы обязательно вам ответим!</h2>
 				<form class="feedback-form" action="/echo" method="post">
 					<input type="text" id="user-name" name="user-name" placeholder="Как вас зовут?">
-					<input type="email" id="email" name="email" placeholder="Ваша почта для ответа">
+					<input type="email" id="feedback-email" name="email" placeholder="Ваша почта для ответа">
 					<textarea name="feedback-text" placeholder="Напишите что-нибудь..."></textarea>
 					<button class="buttons" type="submit">Отправить</button>
 				</form>
