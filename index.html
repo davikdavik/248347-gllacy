@@ -8,15 +8,15 @@
 </head>
 <body>
 	<header class="page-header">
-		<div class="container">
-			<a class="logo">
-				<img src="img/logo.png" width="200" height="50" alt="Gllacy Shop">
-			</a>
+		<div class="container clearfix">
 			<nav class="main-navigation">
-				<ul>
+				<a class="logo">
+					<img src="img/logo.png" width="155" height="65" alt="Gllacy Shop">
+				</a>
+				<ul class="main-menu">
 					<li>
 						<a href="#catalog">Каталог</a>
-						<ul>
+						<ul class="catalog-menu">
 							<li>
 								<a href="#">Новинки</a>
 							</li>
@@ -43,13 +43,13 @@
 				</ul>
 			</nav>
 			<div class="user-block">
-				<div class="search-block">
+				<div class="user-block-item search-block">
 					<a class="search" href="#search">Поиск</a>
 					<div class="search-hover">
 						<input type="text" id="search" name="search" placeholder="Что ищем?">
 					</div>
 				</div>
-				<div class="sign-in-block">
+				<div class="user-block-item sign-in-block">
 					<a class="sign-in" href="#sign-in">Вход</a>
 					<div class="sign-in-hover">
 						<form class="newsletter-form" action="/echo" method="post">
@@ -61,7 +61,7 @@
 						<a href="#">Новая регистрация</a>
 					</div>
 				</div>
-				<div class="cart-block">
+				<div class="user-block-item cart-block">
 					<a class="cart" href="#cart">Корзина</a>
 					<div class="cart-hover">
 						<div class="cart-item">
@@ -84,7 +84,7 @@
 				</div>
 			</div>
 		</div>
-		<div class="container">
+		<div class="container clearfix">
 			<div class="contacts-block">
 				<p class="schedule">С 10 до 20, ежедневно</p>
 				<a class="phone" href="tel:88124502525">8 812 450-25-25</a>
@@ -107,9 +107,9 @@
 				<a href="#">2</a>
 				<a href="#">3</a>
 			</div>
-			<a class="buttons" href="#">Дайте два!</a>		
+			<a class="buttons" href="#">Давайте оба!</a>		
 		</div>
-		<div class="container">
+		<div class="banners clearfix">
 			<div class="banner-left">
 				<h2>Малинка даром!</h2>	
 				<p>При покупке 2кг любого фруктового мороженого, добавим в ваш заказ банку малинового варенья бесплатно</p>
@@ -121,31 +121,31 @@
 				<a class="buttons" href="#">Хочу шоколадки!</a>    			
 			</div>
 		</div>
-		<div class="bestsellers">
+		<div class="bestsellers clearfix">
 			<article class="bestseller-item">
 				<div class="item-image">
-					<img src="img/item1.png" width="150" height="150" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой">
+					<img src="img/item1.png" width="267" height="267" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой">
 				</div>
 				<p class="price">310 &#8381;/кг</p>
 				<a href="#">Сливочное с апельсиновым джемом и цитрусовой стружкой</a> 
 			</article>
 			<article class="bestseller-item">
 				<div class="item-image">
-					<img src="img/item2.png" width="150" height="150" alt="Сливочно-кофейное с кусочками шоколада">
+					<img src="img/item2.png" width="267" height="267" alt="Сливочно-кофейное с кусочками шоколада">
 				</div>
 				<p class="price">380 &#8381;/кг</p>
 				<a href="#">Сливочно-кофейное с кусочками шоколада</a> 
 			</article>
 			<article class="bestseller-item">
 				<div class="item-image">
-					<img src="img/item3.png" width="150" height="150" alt="Сливочно-клубничное с присыпкой из белого шоколада">
+					<img src="img/item3.png" width="267" height="267" alt="Сливочно-клубничное с присыпкой из белого шоколада">
 				</div>
 				<p class="price">355 &#8381;/кг</p>
 				<a href="#">Сливочно-клубничное с присыпкой из белого шоколада</a> 
 			</article>
 			<article class="bestseller-item">
 				<div class="item-image">
-					<img src="img/item4.png" width="150" height="150" alt="Сливочное крем-брюле с карамельной подливкой">
+					<img src="img/item4.png" width="267" height="267" alt="Сливочное крем-брюле с карамельной подливкой">
 				</div>
 				<p class="price">415 &#8381;/кг</p>
 				<a href="#">Сливочное крем-брюле с карамельной подливкой</a> 
@@ -153,7 +153,7 @@
 		</div>
 		<section class="about-us">
 			<h2 class="about-us-title">Магазин Глейси - это онлайн и офлайн магазин по продаже мороженого собственного производства наразвес</h2>
-			<div class="about-us-features">
+			<div class="about-us-features clearfix">
 				<div class="feature-item">
 					<p class="feature-item-text">Все наше мороженое изготавливается на собственном производстве, с использованием 
 						современного оборудования и проверенных временем технологий.</p>
@@ -169,7 +169,7 @@
 				</div>
 			</div>
 		</section>			
-		<div class="container">
+		<div class="inner-container clearfix">
 			<div class="blogpost">
 				<p>Новое в нашем блоге</p>
 				<a href="#">10 пособов сортировки фруктовых щербетов к столу</a>
@@ -182,15 +182,16 @@
 				</form>
 			</div>
 		</div>
-		<div class="map-block">
-			<div class="map"></div>
-			<div class="contacts">
-				<span class="contacts-text">Адрес главного офиса и офлайн-магазина:</span>
-				<span class="contacts-adress">ул. Большая Конюшенная 19/8, Санкт-Петербург</span>
-				<span class="contacts-text">Для заказов по телефону:</span>
-				<a class="contacts-phone" href="tel:88124502525">8 812 450-25-25</a>
-				<span class="contacts-text">(c 10 до 20 ежедневно)</span>
-				<a class="buttons" href="#">Форма обратной связи</a>
+		<div class="map-block clearfix">
+			<div class="map">
+				<div class="contacts">
+					<span class="contacts-text">Адрес главного офиса и офлайн-магазина:</span>
+					<span class="contacts-adress">ул. Большая Конюшенная 19/8, Санкт-Петербург</span>
+					<span class="contacts-text">Для заказов по телефону:</span>
+					<a class="contacts-phone" href="tel:88124502525">8 812 450-25-25</a>
+					<span class="contacts-text">(c 10 до 20 ежедневно)</span>
+					<a class="buttons" href="#">Форма обратной связи</a>
+				</div>
 			</div>
 		</div>
 		<div class="popup popup-feedback">
@@ -203,8 +204,8 @@
 				</form>
 		</div>
 	</main>
-	<footer>
-		<div class="container">
+	<footer class="page-footer">
+		<div class="container clearfix">
 			<section class="social-links">
 				<a class="social-button twitter" href="#">Twitter</a>
 				<a class="social-btn instagram" href="#">Instagram</a>
@@ -212,13 +213,13 @@
 				<a class="social-button vkontakte" href="#">Вконтакте</a>            
 			</section>
 			<div class="footer-navigation">
-				<a class="position-left" href="#">Для поставщиков</a>
-				<a class="position-right" href="#">Наши документы</a>
-				<a class="position-left" href="#">О производстве</a>
-				<a class="position-right" href="#">Экологические стандарты</a>
+				<a class="footer-navigation-item" href="#">Для поставщиков</a>
+				<a class="footer-navigation-item" href="#">Наши документы</a>
+				<a class="footer-navigation-item" href="#">О производстве</a>
+				<a class="footer-navigation-item" href="#">Экологические стандарты</a>
 			</div>
 			<div class="copyright">	
-				<a href="https://htmlacademy.ru"><img src="img/html-academy-logo.png" width="80" height="40" alt="HTML Academy"></a>	 
+				<a href="https://htmlacademy.ru"><img src="img/html-academy-logo.png" width="108" height="38" alt="HTML Academy"></a>	 
 				<p>Сделано в <a class="btn" href="https://htmlacademy.ru">HTML Academy</a> &#169;2017</p>
 			</div>
 		</div>
