@@ -9,7 +9,6 @@ body {
 }
 .page-header {
 	background-color: green;
-	margin-bottom: 270px;
 }
 .clearfix::after {
   content: "";
@@ -72,6 +71,7 @@ body {
 .slider {
 	background-color: grey;
 	margin-bottom: 40px;
+	margin-top: 270px;
 }
 .banner1 {
 	min-height: 120px;
@@ -177,6 +177,60 @@ body {
 	margin-right: 27px;
 	margin-top: 63px;
 	padding: 35px 20px 30px;
+}
+.sorting{
+	background-color: green;
+}
+.sorting .buttons{
+	width: 147px;
+	float: left;
+	margin-top: 43px;
+}
+.fieldset-sorting{
+	width: 195px;
+	float: left;
+	margin-right: 16px;
+}
+.fieldset-price{
+	width: 220px;
+	float: left;
+	height: 56px;
+	margin-right: 16px;
+}
+.fieldset-fat {
+	width: 420px;
+	float: left;
+}
+.fieldset-filler{
+	width: 703px;
+	float: left;
+	margin-right: 16px;
+	margin-top: 17px;
+}
+.catalog {
+	background-color: red;
+	margin-bottom: 80px;
+}
+.catalog-item {
+	background-color: orange;
+	min-height: 325px;
+	width: 267px;
+	height: 327px;
+	float: left;
+	margin-right: 26px;
+	margin-top: 40px;
+}
+.catalog-item:nth-child(4n){
+	margin-right: 0px;
+}
+.catalog-item .buttons {
+	display: none;
+}
+.catalog-paginator{
+	min-height: 34px;
+	background-color: orange;
+	width: 267px;
+	float: right;
 }
 .page-footer {
 	background-color: green;
