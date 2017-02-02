@@ -6,6 +6,7 @@ html {
 }
 body {
 	font-family: 'Roboto', 'Arial', sans-serif;
+	margin: 0px;
 }
 img {
 max-width: 100%;
@@ -166,12 +167,11 @@ display: block;
 }
 .map-block {
 	background-color: red;
+	width: 100%;
 }
 .map {
-	width: 1200px;
 	height: 430px;
 	background-color: green;
-	margin-left:-27px;
 }
 .map-block .contacts {
 	width: 303px;
