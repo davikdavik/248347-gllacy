@@ -29,7 +29,7 @@ display: block;
 }
 .main-navigation {
 	min-height: 65px;
-	width: 600px;
+	width: 75%;
 	background-color: red;
 	float: left;
 }
@@ -45,20 +45,20 @@ display: block;
 }
 .main-menu li {
 	display: inline-block;
+	vertical-align: middle;
 }
 .user-block {
-	min-height: 65px;
 	background-color: orange;
-	width: 270px;
+	width: 25%;
 	float: right;
 }
 .user-block .user-block-item {
 	display: inline-block;
+	vertical-align: middle;
 }
 .contacts-block {
-	min-height: 55px;
 	background-color: grey;
-	width: 270px;
+	width: 25%;
 	float: right;
 }
 .catalog-menu {
@@ -76,10 +76,9 @@ display: block;
 .slider {
 	background-color: grey;
 	margin-bottom: 40px;
-	margin-top: 270px;
 }
 .banner1 {
-	min-height: 120px;
+	min-height: 390px;
 	background-color: blue;
 	margin-bottom: 25px;
 }
@@ -188,28 +187,29 @@ display: block;
 .sorting .buttons{
 	width: 147px;
 	float: left;
-	margin-top: 43px;
+	margin-top: 26px;
 }
 .fieldset-sorting{
 	width: 195px;
 	float: left;
 	margin-right: 16px;
+	margin-bottom: 17px;
 }
 .fieldset-price{
 	width: 220px;
 	float: left;
-	height: 56px;
 	margin-right: 16px;
+	margin-bottom: 17px;
 }
 .fieldset-fat {
 	width: 420px;
 	float: left;
+	margin-bottom: 17px;
 }
 .fieldset-filler{
 	width: 703px;
 	float: left;
 	margin-right: 16px;
-	margin-top: 17px;
 }
 .catalog {
 	background-color: red;
@@ -217,9 +217,8 @@ display: block;
 }
 .catalog-item {
 	background-color: orange;
-	min-height: 325px;
+	min-height: 327px;
 	width: 267px;
-	height: 327px;
 	float: left;
 	margin-right: 26px;
 	margin-top: 40px;
@@ -262,8 +261,6 @@ display: block;
 	background-color: red;
 	float:right;
 	margin-left: 26px;
-	/*padding-left: 75px;
-	padding-top: 20px;*/
 	font-size: 12pt;
 }
 .popup-feedback {
