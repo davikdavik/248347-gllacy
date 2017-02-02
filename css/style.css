@@ -26,6 +26,7 @@ display: block;
 	background-color: yellow;
 	margin: 0 auto;
 	padding: 0 27px;
+	position: relative;
 }
 .main-navigation {
 	min-height: 65px;
@@ -178,9 +179,11 @@ display: block;
 	height: 307px;
 	float: right;
 	background-color: grey;
-	margin-right: 27px;
-	margin-top: 63px;
 	padding: 35px 20px 30px;
+	position: absolute;
+	top: -367px;
+	left: 870px;
+
 }
 .sorting{
 	background-color: green;
@@ -218,11 +221,12 @@ display: block;
 }
 .catalog-item {
 	background-color: orange;
-	min-height: 327px;
+	height: 327px;
 	width: 267px;
 	float: left;
 	margin-right: 26px;
 	margin-top: 40px;
+	overflow: hidden;
 }
 .catalog-item:nth-child(4n){
 	margin-right: 0px;
