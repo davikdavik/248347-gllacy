@@ -81,6 +81,7 @@ display: block;
 	min-height: 390px;
 	background-color: blue;
 	margin-bottom: 25px;
+	padding-top: 270px;
 }
 .banner2, .banner3 {
 	display: none;
