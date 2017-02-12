@@ -69,7 +69,7 @@ img {
 	color: transparent
 }
 .page-header {
-	outline: green solid 1px;
+	/*outline: green solid 1px;*/
 }
 .page-header .container {
 	position: relative;
@@ -81,7 +81,7 @@ img {
 }
 .container {
 	width: 1200px;
-	outline: yellow solid 1px;
+	/*outline: yellow solid 1px;*/
 	margin: 0 auto;
 	padding: 0 27px;
 	position: relative;
@@ -97,10 +97,9 @@ img {
 	max-width: 165px;
 	float: left;
 	padding-top: 10px;
-	/*padding-right: 25px;*/
 }
 .main-menu {
-	outline: white solid 1px;
+	/*outline: white solid 1px;*/
 	width: 70%;
 	float: left;
 	margin: 0;
@@ -179,7 +178,7 @@ img {
 	box-shadow: none;
 }
 .user-block {
-	outline: orange solid 1px;
+	/*outline: orange solid 1px;*/
 	width: 25%;
 	float: right;
 	margin: 0;
@@ -189,7 +188,7 @@ img {
 .user-block-item {
 	display: inline-block;
 	vertical-align: top;
-	outline: magenta solid 1px;
+	/*outline: magenta solid 1px;*/
 	padding-bottom: 15px;
 	float: right;
 }
@@ -426,15 +425,14 @@ img {
 }
 .cart-total {
 	display: block;
-	outline: orange solid 1px;
+	/*outline: orange solid 1px;*/
 	float: right;
-	/*width: 100%;*/
 	font-size: 15px;
 	line-height: 18px;
 	font-weight: 700;
 }
 .contacts-block {
-	outline: grey solid 1px; 
+	/*outline: grey solid 1px;*/
 	position: absolute;
 	z-index: 3;
 	right: 27px;
