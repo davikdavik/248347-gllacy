@@ -70,7 +70,7 @@
 				<div class="user-block-item sign-in-block">
 					<a class="sign-in" href="#sign-in">Вход</a>
 					<div class="sign-in-hover">
-						<form class="newsletter-form" action="/echo" method="post">
+						<form class="sign-in-form" action="/echo" method="post">
 							<input class="text-input" type="email" id="email" name="email" placeholder="Электронная почта">
 							<input class="text-input" type="password" id="password" name="password" placeholder="Пароль">
 							<button class="buttons" type="submit">Войти</button>
@@ -108,22 +108,22 @@
 				<div class="banner banner3">
 					<p class="banner-text">Пломбир с помадкой и клубничный щербет</p>
 				</div>
-				<div class="paginator">
-					<a href="#">1</a>
-					<a href="#">2</a>
-					<a href="#">3</a>
+				<div class="slider-controls">
+					<label for="btn-1" class="current"></label>
+            		<label for="btn-2"></label>
+            		<label for="btn-3"></label>
 				</div>
 				<a class="buttons" href="#">Давайте оба!</a>
 			</div>
 			<div class="banners clearfix">
 				<div class="banner-left">
 					<h2>Малинка даром!</h2>	
-					<p>При покупке 2кг любого фруктового мороженого, добавим в ваш заказ банку малинового варенья бесплатно.</p>
+					<p>При покупке 2 кг любого фруктового мороженого, добавим в ваш заказ банку малинового варенья бесплатно.</p>
 					<a class="buttons" href="#">Хочу варенье!</a>
 				</div>
 				<div class="banner-right">
 					<h2>Шоколадки даром!</h2>
-					<p>При покупке 2кг пломбира, добавим в ваш заказ упаковку вкуснейшей шоколадной присыпки совершенно бесплатно.</p>
+					<p>При покупке 2 кг пломбира, добавим в ваш заказ упаковку вкуснейшей шоколадной присыпки совершенно бесплатно.</p>
 					<a class="buttons" href="#">Хочу шоколадки!</a>
 				</div>
 			</div>
@@ -158,7 +158,7 @@
 				</article>
 			</div>
 			<section class="about-us">
-				<h2 class="about-us-title">Магазин Глейси - это онлайн и офлайн магазин по продаже мороженого собственного производства наразвес</h2>
+				<h2 class="about-us-title">Магазин Глейси &mdash; это онлайн и офлайн магазин по продаже мороженого собственного производства на развес</h2>
 				<div class="about-us-features clearfix">
 					<div class="feature-item">
 						<p class="feature-item-text">Все наше мороженое изготавливается на собственном производстве, с использованием 
@@ -181,19 +181,23 @@
 					<a class="blogpost-title" href="#">10 cпособов сортировки фруктовых щербетов к столу</a>
 				</div>
 				<div class="newsletter">
-					<p>Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)</p>
-					<form class="newsletter-form" action="/echo" method="post">
-						<input class="text-input" type="email" id="newsletter-email" name="email" placeholder="Электронная почта">
-						<button class="buttons" type="submit">Отправить</button>
-					</form>
+					<div class="wrapper">
+						<p>Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)</p>
+						<form class="newsletter-form" action="/echo" method="post">
+							<input class="text-input" type="email" id="newsletter-email" name="email" placeholder="Электронная почта">
+							<button class="buttons" type="submit">Отправить</button>
+						</form>
+					</div>
 				</div>
 			</div>
 		</div>
 		<div class="map-block clearfix">
-			<div class="map"></div>
+			<div class="map">
+				<script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?sid=jKBZb9okmzVAXrHbk9lkyd9Xrh8RszDT&amp;width=100%25&amp;height=430&amp;lang=ru_RU&amp;sourceType=constructor&amp;scroll=true"></script>
+			</div>
 			<div class="container">
-				<div class="contacts">
-					<span class="contacts-text">Адрес главного офиса и офлайн-магазина:</span>
+				<div class="map-block-contacts">
+					<span class="contacts-text">Адрес главного офиса<br> и офлайн-магазина:</span>
 					<span class="contacts-adress">ул. Большая Конюшенная 19/8, Санкт-Петербург</span>
 					<span class="contacts-text">Для заказов по телефону:</span>
 					<a class="contacts-phone" href="tel:88124502525">8 812 450-25-25</a>

@@ -466,8 +466,8 @@ a.buttons{
 	padding:0;
 }
 .slider {
-	/*outline: 1px solid grey;*/
 	margin-bottom: 40px;
+	position: relative;
 }
 .slider::before {
  	content: "";
@@ -477,7 +477,7 @@ a.buttons{
  	position: absolute;
  	z-index: -1;
  	top: -77px;
- 	left: 77px;
+ 	left: 55px;
 }
 .slider .buttons {
 	width: 280px;
@@ -491,9 +491,8 @@ a.buttons{
 	text-align: center;
 }
 .banner1 {
-	min-height: 390px;
-	/*outline: 1px solid blue;*/
-	margin-bottom: 30px;
+	min-height: 450px;
+	margin-bottom: 17px;
 	padding-top: 318px;
 	text-align: center;
 }
@@ -511,11 +510,32 @@ a.buttons{
 .banner2, .banner3 {
 	display: none;
 }
-.paginator {
+.slider-controls {
 	width: 270px;
 	float: left;
-	outline: 1px solid orange;
-	margin-top: 25px;
+	position: absolute;
+	left:0;
+	bottom: 23px;
+}
+.slider-controls label {
+	display: inline-block;
+	width: 21px;
+	height: 21px;
+	margin-right: 8px;
+	vertical-align: top;
+	background-color: transparent;
+	border: 2px solid #ffffff;
+	border-radius: 50%;
+	cursor: pointer;
+}
+.slider-controls label:hover {
+	background-color: #b2c1b7;
+}
+.slider-controls label:active {
+	background-color: #ffffff;
+}
+.slider-controls label.current {
+	background-color: white;
 }
 .banners {
 	/*outline: 1px solid red;*/
@@ -565,7 +585,7 @@ a.buttons{
 }
 .bestsellers {
 	/*outline: 1px solid red;*/
-	margin-bottom: 40px;
+	margin-bottom: 36px;
 }
 .bestseller-item {
 	/*outline: 1px solid orange;*/
@@ -636,20 +656,83 @@ a.buttons{
   height: 267px;
 }
 .about-us {
-	outline: 1px solid red;
 	margin-bottom: 40px;	
-	padding: 0px 20px 30px;
+	padding: 24px 20px 0px 20px;
+	background-color: white;
+	background-image: url("../img/waffle-pattern.jpg");
+	background-repeat: repeat;
+	border-radius: 16px;
 }
 .about-us-title {
-	padding-top: 30px;
+	color: #323232;
+	font-size: 24px;
+	line-height: 30px;
+	font-weight: 500;
+	padding: 0;
+	margin: 0;
+	margin-bottom: 24px;
 }
 .feature-item {
-	outline: 1px solid green;
+	/*outline: 1px solid green;*/
 	width: 540px;
 	float: left;
+	padding-left: 60px;
+	padding-bottom: 24px;
+	position: relative;
+}
+.feature-item:nth-child(1)::before{
+	content: "";
+	width: 49px;
+	height: 49px;
+	background-image: url("../img/feature-item-sprite.png");
+	background-repeat: no-repeat;
+	background-position: -5px -5px;
+	position: absolute;
+	left: 0px;
+	top: -15px;
+}
+.feature-item:nth-child(2)::before{
+	content: "";
+	width: 49px;
+	height: 49px;
+	background-image: url("../img/feature-item-sprite.png");
+	background-repeat: no-repeat;
+    background-position: -5px -64px;
+	position: absolute;
+	left: 0px;
+	top: -15px;
+}
+.feature-item:nth-child(3)::before{
+	content: "";
+	width: 49px;
+	height: 49px;
+	background-image: url("../img/feature-item-sprite.png");
+	background-repeat: no-repeat;
+	background-position: -64px -5px;
+	position: absolute;
+	left: 0px;
+	top: -15px;
+}
+.feature-item:nth-child(4)::before{
+	content: "";
+	width: 49px;
+	height: 49px;
+	background-image: url("../img/feature-item-sprite.png");
+	background-repeat: no-repeat;
+    background-position: -63px -64px;
+	position: absolute;
+	left: 0px;
+	top: -15px;
 }
 .feature-item:nth-child(2n+1){
-	margin-right: 26px;
+	margin-right: 24px;
+}
+.feature-item-text {
+	color: #323232;
+	font-size: 16px;
+	line-height: 22px;
+	margin:0;
+	padding: 0;
 }
 .inner-container {
 	margin-bottom: 40px;
@@ -690,33 +773,94 @@ a.buttons{
 	min-height: 220px;
 	width: 560px;
 	float: right;
-	padding: 0px 20px;
 	background-color: white;
-	background-repeat: no-repeat;
+	background-image: url("../img/newsletter-background.png");
+	background-repeat: repeat;
 	border-radius: 16px;
+	position: relative;
+	padding: 5px 5px 5px 6px;
+}
+.newsletter .wrapper {
+	width: 549px;
+	min-height: 210px;
+	background-color: #ffffff;
+	border-radius: 16px;
+	padding: 30px 20px 30px 20px;
+}
+.newsletter p {
+	margin: 0;
+	padding: 0;
+	margin-bottom: 38px;
+	color: #5a5a5a;
+	font-size: 16px;
+	line-height: 22px;
+}
+.newsletter-form input {
+	height: 44px;
+	width: 368px;
+}
+.newsletter-form .buttons {
+	padding-left: 16px;
+	padding-right: 16px;
+	float: right;
 }
 .map-block {
-	outline: 1px solid red;
 	width: 100%;
-}
-.map-block .buttons {
-	display: block;
 }
 .map {
 	height: 430px;
-	outline: 1px solid green;
 }
-.map-block .contacts {
+.map-block-contacts {
 	width: 303px;
 	height: 307px;
 	float: right;
-	outline: 1px solid grey;
-	padding: 35px 20px 30px;
+	padding: 28px 30px 30px 27px;
 	position: absolute;
 	top: -367px;
 	left: 870px;
 	background-color: #f7f6f3;
 	border-radius: 10px;
+}
+.map-block-contacts span {
+	display: block;
+	float: left;
+	padding: 0;
+	margin: 0;
+}
+.map-block-contacts a {
+	display: block;
+	float: left;
+	padding: 0;
+	margin: 0;
+}
+.map-block-contacts .contacts-text {
+	color: #323232;
+	font-size: 14px;
+	line-height: 20px;
+	margin-bottom: 2px;
+}
+.map-block-contacts .contacts-adress {
+	color: #323232;
+	font-size: 18px;
+	line-height: 24px;
+	font-weight: 700;
+	margin-bottom: 18px;
+}
+.map-block-contacts .contacts-phone {
+	color: #323232;
+	font-size: 18px;
+	line-height: 22px;
+	font-weight: 700;
+	text-decoration: none;
+	margin-bottom: 5px;
+}
+.map-block .buttons {
+	display: block;
+	position: absolute;
+	bottom: 35px;
+	left: 27px;
+	text-align: center;
+	padding: 10px 27px;
 }
 .sorting{
 	outline: 1px solid green;
