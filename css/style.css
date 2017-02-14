@@ -652,22 +652,42 @@ a.buttons{
 	margin-right: 26px;
 }
 .inner-container {
-	outline: 1px solid red;
 	margin-bottom: 40px;
 }
 .blogpost {
-	outline: 1px solid green;
-	min-height: 230px;
+	min-height: 220px;
 	width: 560px;
 	float: left;
-	padding: 0px 20px;
+	padding: 22px 20px;
 	background-image: url("../img/blogpost-background.jpg");
 	background-repeat: no-repeat;
 	border-radius: 16px;
 }
+.blogpost h2 {
+	color: #323232;
+	font-size: 16px;
+	line-height: 22px;
+	font-weight: 500;
+	padding: 0;
+	margin: 0;
+	margin-bottom: 6px;
+}
+.blogpost-title {
+	color: #323232;
+	font-size: 24px;
+	line-height: 30px;
+	font-weight: 700;
+	display: block;
+	width: 60%;
+}
+.blogpost-title:hover {
+	color: #e84d37;
+}
+.blogpost-title:active {
+	color: #e84d37;
+}
 .newsletter {
-	outline: 1px solid orange;
-	min-height: 230px;
+	min-height: 220px;
 	width: 560px;
 	float: right;
 	padding: 0px 20px;
@@ -678,6 +698,9 @@ a.buttons{
 .map-block {
 	outline: 1px solid red;
 	width: 100%;
+}
+.map-block .buttons {
+	display: block;
 }
 .map {
 	height: 430px;
