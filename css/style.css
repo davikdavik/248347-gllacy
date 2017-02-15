@@ -598,10 +598,7 @@ a.buttons{
 	line-height: 22px;
 	font-weight: 500;
 }
-.bestseller-item-name:hover {
-	color: #ffbc9e;
-}
-.bestseller-item-name:active {
+.bestseller-item-name:hover, .bestseller-item-name:active {
 	color: #ffbc9e;
 }
 .bestseller-item:nth-child(4n){
@@ -927,10 +924,7 @@ a.buttons{
 	line-height: 22px;
 	font-weight: 500;
 }
-.catalog-item-name:hover {
-	color: #ffbc9e;
-}
-.catalog-item-name:active {
+.catalog-item-name:hover, .catalog-item-name:active {
 	color: #ffbc9e;
 }
 .catalog-item:nth-child(4n){
