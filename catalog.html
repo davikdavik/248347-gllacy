@@ -110,7 +110,7 @@
 			<form class="catalog-sorting-form clearfix" action="/echo" method="post">
 				<fieldset class="fieldset-sorting">
 					<legend>Сортировка:</legend>
-					<select class="sorting" id="sorting-list" name="sorting-list" >
+					<select class="sorting-select" id="sorting-list" name="sorting-list" >
 						<option value="popular" selected>по популярности</option>
 						<option value="price-up">сначала недорогие</option>
 						<option value="price-down">сначала дорогие</option>
@@ -119,28 +119,34 @@
 				</fieldset>
 				<fieldset class="fieldset-price">
 					<legend>Цена:</legend>
-					<input type="text" id="low-price" name="low-price" placeholder="100" size="3">
-					<span>руб. - </span>
-					<input type="text" id="high-price" name="high-price" placeholder="500" size="3">
-					<span>руб.</span>
+					<div class="choosing-price">
+						<input type="text" id="low-price" name="low-price" placeholder="100" size="2">
+						<span>руб. - </span>
+						<input type="text" id="high-price" name="high-price" placeholder="500" size="2">
+						<span>руб.</span>
+					</div>
 					<div class="price-slider"></div>
 				</fieldset>
 				<fieldset class="fieldset-fat">
 					<legend>Жирность:</legend>
-					<input type="radio" id="fat0" name="fat" value="0"><label for="fat0">0%</label>
-					<input type="radio" id="fat0-10" name="fat" value="0-10" checked><label for="fat0-10">до 10%</label>
-					<input type="radio" id="fat10-30" name="fat" value="10-30"><label for="fat10-30">до 30%</label>
-					<input type="radio" id="fat30" name="fat" value="30"><label for="fat30">выше 30%</label>
+					<div class="sorting-input-container">
+						<input class="radio-button" type="radio" id="fat0" name="fat" value="0"><label for="fat0">0%</label>
+						<input class="radio-button" type="radio" id="fat0-10" name="fat" value="0-10" checked><label for="fat0-10">до 10%</label>
+						<input class="radio-button" type="radio" id="fat10-30" name="fat" value="10-30"><label for="fat10-30">до 30%</label>
+						<input class="radio-button" type="radio" id="fat30" name="fat" value="30"><label for="fat30">выше 30%</label>
+					</div>
 				</fieldset>
 				<fieldset class="fieldset-filler">
 					<legend>Наполнители:</legend>
-					<input type="checkbox" id="chocolate" name="filler" value="chocolate" checked><label for="chocolate">шоколадные</label>
-					<input type="checkbox" id="sugar" name="filler" value="sugar" checked><label for="sugar">сахарные присыпки</label>
-					<input type="checkbox" id="fruit" name="filler" value="fruit" ><label for="fruit">фрукты</label>
-					<input type="checkbox" id="syrup" name="filler" value="syrup" ><label for="syrup">сиропы</label>
-					<input type="checkbox" id="jam" name="filler" value="jam" ><label for="jam">джемы</label>
+					<div class="sorting-input-container">
+						<input class="checkbox" type="checkbox" id="chocolate" name="filler" value="chocolate" checked><label for="chocolate">шоколадные</label>
+						<input class="checkbox" type="checkbox" id="sugar" name="filler" value="sugar" checked><label for="sugar">сахарные присыпки</label>
+						<input class="checkbox" type="checkbox" id="fruit" name="filler" value="fruit" ><label for="fruit">фрукты</label>
+						<input class="checkbox" type="checkbox" id="syrup" name="filler" value="syrup" ><label for="syrup">сиропы</label>
+						<input class="checkbox" type="checkbox" id="jam" name="filler" value="jam" ><label for="jam">джемы</label>
+					</div>
 				</fieldset>
-				<button class="buttons" type="submit">Применить</button>
+				<button class="sorting-button" type="submit">Применить</button>
 			</form>
 		</div>
 		<div class="catalog clearfix">
