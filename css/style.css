@@ -81,6 +81,7 @@ a.buttons{
 	margin-right: auto;
 	padding: 0 27px;
 	position: relative;
+	outline: blue solid 1px;
 }
 .main-navigation {
 	min-height: 65px;
@@ -983,6 +984,7 @@ a.buttons{
 	position: absolute;
 	top:-9px;
 	left: 19px;
+	cursor: pointer;
 }
 .price-range:after {
 	content: "";
@@ -993,6 +995,7 @@ a.buttons{
 	position: absolute;
 	top:-9px;
 	right: 49px;
+	cursor: pointer;
 }
 .price-range-choosen {
 	width: 78px;
@@ -1135,7 +1138,7 @@ a.buttons{
 }
 .catalog {
 	outline: 1px solid red;
-	margin-bottom: 80px;
+	margin-bottom: 50px;
 	margin-left: -13px;
 	margin-right: -16px;
 }
@@ -1147,7 +1150,7 @@ a.buttons{
 	margin-right: 1px;
 	margin-top: 30px;
 	margin-bottom: 5px;
-	overflow: hidden;
+	/*overflow: hidden;*/
 	position: relative;
 	text-align: center;
 	padding: 5px 13px 5px 13px;
@@ -1163,12 +1166,13 @@ a.buttons{
 }
 .catalog-item .buttons {
 	display: none;
-	/*position: absolute;
-	bottom: 20px;*/
-
+	z-index: 10;
 }
 .catalog-item:hover .buttons {
 	display: block;
+}
+.catalog-item:hover .catalog-button-container {
+	background-color: #a7b8ad;
 }
 .catalog-item .price {
 	color: #ffffff;
@@ -1199,37 +1203,96 @@ a.buttons{
 }
 .catalog-item-image {
 	width: 267px;
-  	height: 267px;
-  	margin: auto;
-  	margin-bottom: 13px;
+	height: 267px;
+	margin: auto;
+	margin-bottom: 13px;
 	border-radius: 50%;
 	overflow: hidden;
-   	position: relative;
+	position: relative;
+	z-index: 0;
 }
 .catalog-item-image img {
-  position: absolute;
-  top: 1px;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  margin: auto;
-  width: 267px;
-  height: 267px;
+	position: absolute;
+	top: 1px;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	margin: auto;
+	width: 267px;
+	height: 267px;
+	z-index: 0;
 }
 .catalog-button-container {
 	width: 100%;
 	height: 77px;
 	position: absolute;
 	left: 0;
-	bottom: -60px;
+	bottom: -77px;
 	z-index: 10;
 	outline: 1px solid green;
 }
 .catalog-paginator{
 	min-height: 34px;
-	outline: 1px solid orange;
-	width: 267px;
 	float: right;
+	margin-right: -10px;
+}
+.catalog-paginator a {
+	display: block;
+	float: left;
+	color: #ffffff;
+	font-size: 16px;
+	line-height: 18px;
+	font-weight: 500;
+	padding: 4px 9px;
+	text-decoration: none;
+	margin-right: 2px;
+}
+.catalog-paginator a:hover {
+	color: #353535;
+	border-radius: 50%;
+	background-color: #9db1a5;
+}
+.catalog-paginator a:active {
+	background-color: #ffffff;
+}
+.catalog-paginator .prev {
+	display: block;
+	float: left;
+	width: 27px;
+	height: 26px;
+	font-size: 0;
+	background-image: url("../img/catalog-pagimator-prev-active.png");
+	background-repeat: no-repeat;
+	background-position: center center;
+}
+.catalog-paginator .prev-inactive {
+	background-image: url("../img/catalog-pagimator-prev-inactive.png");
+}
+.catalog-paginator .prev-inactive:hover {
+	background-color: transparent;
+	cursor: default;
+}
+.catalog-paginator .current{
+	color: #353535;
+	border-radius: 50%;
+	background-color: #ffffff;
+}
+.catalog-paginator .next {
+	display: block;
+	float: left;
+	width: 27px;
+	height: 26px;
+	font-size: 0;
+	background-image: url("../img/catalog-pagimator-next-active.png");
+	background-repeat: no-repeat;
+	background-position: center center;
+}
+.catalog-paginator .next-inactive {
+	background-image: url("../img/catalog-pagimator-next-inactive.png");
+}
+.catalog-paginator .next-inactive:hover {
+	background-color: transparent;
+	cursor: default;
 }
 .page-footer {
 	margin-top: 20px;
