@@ -118,14 +118,18 @@
 					</select>
 				</fieldset>
 				<fieldset class="fieldset-price">
-					<legend>Цена:</legend>
-					<div class="choosing-price">
-						<input type="text" id="low-price" name="low-price" placeholder="100" size="2">
-						<span>руб. - </span>
-						<input type="text" id="high-price" name="high-price" placeholder="500" size="2">
+					<legend class="choosing-price">
+						<span>Цена:</spam>
+						<input type="text" id="low-price" name="low-price" placeholder="100" size="3">
+						<span>руб. &ndash;</span>
+						<input type="text" id="high-price" name="high-price" placeholder="500" size="3">
 						<span>руб.</span>
+					</legend>
+					<div class="sorting-input-container">
+						<div class="price-range">
+							<div class="price-range-choosen"></div>
+						</div>
 					</div>
-					<div class="price-slider"></div>
 				</fieldset>
 				<fieldset class="fieldset-fat">
 					<legend>Жирность:</legend>
@@ -156,7 +160,9 @@
 				</div>
 				<p class="price">310&#8381;<span class="price-for">/кг</span></p>
 				<a class="catalog-item-name" href="#">Сливочное с апельсиновым джемом и цитрусовой стружкой</a> 
-				<a class="buttons" href="#">Быстрый просмотр</a> 
+				<div class="catalog-button-container">
+					<a class="buttons" href="#">Быстрый просмотр</a> 
+				</div>
 			</article>
 			<article class="catalog-item">
 				<div class="catalog-item-image">
@@ -266,7 +272,7 @@
 				<a class="social-button vkontakte" href="#">Вконтакте</a>
 			</section>
 			<div class="footer-navigation">
-				<a class="footer-navigation-item heart" href="#">Для поставщиков</a>
+				<a class="footer-navigation-item icon" href="#">Для поставщиков</a>
 				<a class="footer-navigation-item" href="#">Наши документы</a>
 				<a class="footer-navigation-item" href="#">О производстве</a>
 				<a class="footer-navigation-item" href="#">Экологические стандарты</a>
