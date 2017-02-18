@@ -525,16 +525,29 @@ a.buttons{
 	font-weight: 700;
 }
 .banners .buttons {
-	position: absolute;
-	bottom: 23px;
-	right: 20px;
+	border-radius: 30px;
+	float: right;
+	margin-right: 0;
+	margin-top: 5px;
+	display: block;
+	height: 47px;	
+}
+.banner-left .buttons {
+	min-width: 166;
+}
+.banner-right .buttons {
+	min-width: 190;
+}
+.banners .banners-text {
+	min-height: 82px;
+	outline: 1px solid orange;
 }
 .banner-left {
 	/*outline: 1px solid green;*/
 	min-height: 230px;
 	width: 560px;
 	float: left;
-	padding: 17px 20px;
+	padding: 17px 15px 17px 20px;
 	background-image: url("../img/banner-left.jpg");
 	border-radius: 16px;
 	position: relative;
@@ -620,7 +633,7 @@ a.buttons{
 }
 .about-us {
 	margin-bottom: 40px;	
-	padding: 24px 20px 0px 20px;
+	padding: 24px 20px 12px 20px;
 	background-color: white;
 	background-image: url("../img/waffle-pattern.jpg");
 	background-repeat: repeat;
@@ -633,59 +646,38 @@ a.buttons{
 	font-weight: 500;
 	padding: 0;
 	margin: 0;
-	margin-bottom: 24px;
+	margin-bottom: 12px;
 }
 .feature-item {
 	/*outline: 1px solid green;*/
 	width: 540px;
 	float: left;
 	padding-left: 60px;
-	padding-bottom: 24px;
+	padding-top: 12px;
+	padding-bottom: 12px;
 	position: relative;
 }
-.feature-item:nth-child(1)::before{
+.feature-item-icon::before{
 	content: "";
 	width: 49px;
 	height: 49px;
 	background-image: url("../img/feature-item-sprite.png");
 	background-repeat: no-repeat;
+	position: absolute;
+	left: 0px;
+	top: -3px;
+}
+.icon1::before {
 	background-position: -5px -5px;
-	position: absolute;
-	left: 0px;
-	top: -15px;
 }
-.feature-item:nth-child(2)::before{
-	content: "";
-	width: 49px;
-	height: 49px;
-	background-image: url("../img/feature-item-sprite.png");
-	background-repeat: no-repeat;
-    background-position: -5px -64px;
-	position: absolute;
-	left: 0px;
-	top: -15px;
+.icon2::before {
+	background-position: -5px -64px;
 }
-.feature-item:nth-child(3)::before{
-	content: "";
-	width: 49px;
-	height: 49px;
-	background-image: url("../img/feature-item-sprite.png");
-	background-repeat: no-repeat;
+.icon3::before {
 	background-position: -64px -5px;
-	position: absolute;
-	left: 0px;
-	top: -15px;
 }
-.feature-item:nth-child(4)::before{
-	content: "";
-	width: 49px;
-	height: 49px;
-	background-image: url("../img/feature-item-sprite.png");
-	background-repeat: no-repeat;
-    background-position: -63px -64px;
-	position: absolute;
-	left: 0px;
-	top: -15px;
+.icon4::before {
+	background-position: -63px -64px;
 }
 .feature-item:nth-child(2n+1){
 	margin-right: 24px;
@@ -771,7 +763,7 @@ a.buttons{
 .map-block-contacts {
 	width: 303px;
 	height: 307px;
-	padding: 28px 30px 30px 27px;
+	padding: 28px 25px 30px 27px;
 	position: absolute;
 	top: -367px;
 	left: 870px;
@@ -813,11 +805,13 @@ a.buttons{
 }
 .map-block .buttons {
 	display: block;
-	position: absolute;
+	/*position: absolute;
 	bottom: 35px;
-	left: 27px;
+	left: 27px;*/
+	float: right;
 	text-align: center;
 	padding: 10px 27px;
+	margin-top: 18px;
 }
 .breadcrumbs {
 	padding-top: 23px;
@@ -1155,7 +1149,6 @@ a.buttons{
 	text-align: center;
 	padding: 5px 13px 5px 13px;
 	position: relative;
-	z-index: 1;
 }
 .catalog-item:nth-child(4n){
 	margin-right: 0px;
@@ -1305,7 +1298,6 @@ a.buttons{
 	margin-right: 26px;
 }
 .social-button {
-	display: block;
 	float: left;
 	width: 38px;
 	height: 38px;
@@ -1343,7 +1335,6 @@ a.buttons{
 	color: #ffbc9e;
 }
 .footer-navigation-item {
-	display: block;
 	float: left;
 	width: 49%;
 	color: #ffffff;
@@ -1372,13 +1363,14 @@ a.buttons{
 	width: 267px;
 	float:right;
 	margin-left: 26px;
-	font-size: 12pt;
 	padding-left: 80px;
 }
 .copyright p, .copyright a {
 	color: #fefefe;
 	font-size: 12px;
 	line-height: 18px;
+}
+.copyright p {
 	margin: 0;
 	padding-top: 5px;
 }
