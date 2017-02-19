@@ -90,6 +90,14 @@ a.buttons{
 	display: table;
 	clear: both;
 }
+.slider-control-radio {
+	display: none;
+}
+.site-container {
+	min-width: 1240px;
+	background-repeat: no-repeat;
+	background-position: top center;
+}
 .container {
 	width: 1200px;
 	margin-left: auto;
@@ -443,7 +451,6 @@ a.buttons{
 	line-height: 16px;
 	padding-left: 14px;
 	padding-right: 14px;
-
 }
 .cart-item-price {
 	color: #99999;
@@ -488,18 +495,11 @@ a.buttons{
 	padding:0;
 }
 .slider {
+	text-align: center;
+	color: #ffffff;
 	margin-bottom: 40px;
+	padding-top: 318px;
 	position: relative;
-}
-.slider::before {
- 	content: "";
- 	width: 1045px;
- 	height: 881px;
- 	background-image: url("../img/slider-image1.png");
- 	position: absolute;
- 	z-index: -1;
- 	top: -77px;
- 	left: 55px;
 }
 .slider .buttons {
 	width: 280px;
@@ -512,32 +512,23 @@ a.buttons{
 	border-radius: 40px;
 	text-align: center;
 }
-.banner1 {
-	min-height: 450px;
-	margin-bottom: 17px;
-	padding-top: 318px;
-	text-align: center;
+.slide {
+	display: none;
 }
-.banner-text {
-	color: #ffffff;
+.slide-title {
+	width: 700px;
 	font-size: 60px;
 	line-height: 60.35px;
 	font-weight: 700;
-	padding-top: 0px;
-	padding-bottom: 0px;
-	padding-right: 238px;
-	padding-left: 238px;
-	margin: 0;
-}
-.banner2, .banner3 {
-	display: none;
+	margin: 0 auto;
+	margin-bottom: 30px;
 }
 .slider-controls {
-	width: 270px;
-	float: left;
 	position: absolute;
-	left:0;
-	bottom: 23px;
+	bottom: 25px;
+	left: 2px;
+	z-index: 20;
+	font-size: 0;
 }
 .slider-controls label {
 	display: inline-block;
@@ -556,8 +547,29 @@ a.buttons{
 .slider-controls label:active {
 	background-color: #ffffff;
 }
-.slider-controls label.current {
-	background-color: white;
+#btn-1:checked ~ .site-container {
+	background-color: #849d8f;
+	background-image: url("../img/slider-image1.png");
+}
+
+#btn-2:checked ~ .site-container{
+	background-color: #8996a6;
+	background-image: url("../img/slider-image2.png");
+}
+
+#btn-3:checked ~ .site-container {
+	background-color: #9d8b84;
+	background-image: url("../img/slider-image3.png");
+}
+#btn-1:checked ~ .site-container #slide1,
+#btn-2:checked ~ .site-container #slide2,
+#btn-3:checked ~ .site-container #slide3 {
+	display: block;
+}
+#btn-1:checked ~ .site-container label[for="btn-1"],
+#btn-2:checked ~ .site-container label[for="btn-2"],
+#btn-3:checked ~ .site-container label[for="btn-3"] {
+	background-color: #ffffff;
 }
 .banners {
 	/*outline: 1px solid red;*/
