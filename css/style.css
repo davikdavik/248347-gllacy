@@ -123,12 +123,18 @@ a.buttons{
 	color: #333333;
 	background-color: #f7f6f3;
 	border-radius: 20px;
+	text-decoration: none;
 }
 .main-menu a:active {
 	color: #333333;
 	background-color: rgba(248, 247, 244, 0.988);
 	border-radius: 20px;
 	box-shadow: inset 0px 2px 1px 0px #696969;
+}
+.main-menu .current {
+	background-color: #d07058;
+	border-radius: 20px;
+	text-decoration: none;
 }
 .catalog-menu:hover .submenu-catalog {
 	display: block;
@@ -157,7 +163,13 @@ a.buttons{
 .submenu-catalog li:first-child {
 	font-weight: 700;
 }
-
+.submenu-catalog li:first-child::after {
+	content: "";
+	display: block;
+	border-bottom: 1px solid #d1d0ce;
+	margin-right: 6px;
+	margin-left: 6px;
+}
 .submenu-catalog a {
 	color: #323232;
 	text-decoration: none;
@@ -170,6 +182,14 @@ a.buttons{
 	background-color: #f6b5a5;
 	border-radius: 0;
 	box-shadow: none;
+}
+.submenu-catalog .current {
+	background-color: #d07058;
+	border-radius: 0;
+}
+.submenu-catalog .current:active {
+	background-color: #d07058;
+	border-radius: 0;
 }
 .user-block {
 	width: 25%;
@@ -302,6 +322,10 @@ a.buttons{
 .sign-in-hover input {
 	width: 240px;
 	height: 44px;
+	border: 1px solid #999999;
+	border-radius: 5px;
+	margin-bottom: 20px;
+	padding-left: 14px;
 }
 .sign-in-hover .buttons {
 	float: left;
@@ -355,22 +379,15 @@ a.buttons{
 	border-radius: 5px;
 	width: 540px;
 	min-height: 243px;
-	padding: 20px;
+	padding: 20px 15px;
 	position: absolute;
 	z-index: 5;
 	right: 0;
 	top: 39px;
 }
-.cart-hover input {
-	width: 240px;
-	height: 44px;
-	border: 1px solid #999999;
-	border-radius: 5px;
-	margin-bottom: 20px;
-	padding-left: 14px;
-}
 .cart-hover .buttons {
-	float: right;
+	/*float: left;
+	display: block;*/
 	text-decoration: none;
 	margin:0;
 	margin-top: 16px;
@@ -382,18 +399,36 @@ a.buttons{
 	display: none;
 }
 .cart-item {
-	margin-top: 10px;
-	margin-bottom: 10px;
+	margin-bottom: 30px;
+}
+.cart-item .close {
+	display: block;
+	float: left;
+	width: 11px;
+	height: 11px;
+	text-decoration: none;
+	font-size: 0;
+	background-image: url("../img/cart-item-delete.png");
+	background-repeat: no-repeat;
+	margin-right: 14px;
+	margin-top: 4px;
+}
+.cart-item-image {
+	float: left;
+}
+.cart-item-text-line {
+	float: left;
 }
 .cart-item-text {
 	display: block;
-	max-width: 220px;
 	float: left;
+	max-width: 230px;
 	color: #323232;
 	font-size: 13px;
 	line-height: 16px;
-	padding-left: 15px;
-	padding-right: 15px;
+	padding-left: 14px;
+	padding-right: 14px;
+
 }
 .cart-item-price {
 	color: #99999;
@@ -402,11 +437,17 @@ a.buttons{
 }
 .cart-total {
 	display: block;
-	/*outline: orange solid 1px;*/
-	float: right;
+	width: 100%;
+	outline: orange solid 1px;
+	/*float: right;*/
 	font-size: 15px;
 	line-height: 18px;
 	font-weight: 700;
+}
+.cart-total::before {
+	content: "";
+	display: block;
+	border-top: 1px solid #cacac7;
 }
 .contacts-block {
 	/*outline: grey solid 1px;*/
@@ -1065,7 +1106,7 @@ a.buttons{
 }
 .checkbox {
 	vertical-align: top;
-	margin: 0 3px 0 0;
+	margin: 0 2px 0 0;
 	width: 17px;
 	height: 17px;
 	cursor: pointer;
@@ -1221,7 +1262,7 @@ a.buttons{
 	bottom: -77px;
 	z-index: 10;
 	border-radius: 0px 0px 5px 5px;
-	padding: 10px 43px 20px 43px;
+	padding: 10px 43px 20px;
 }
 .catalog-paginator{
 	min-height: 34px;
