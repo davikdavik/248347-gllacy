@@ -35,6 +35,9 @@ img {
 a.buttons{
 	text-decoration: none;
 }
+.input-container {
+	position: relative;
+}
 .text-input {
 	border: 1px solid #d3d3d2;
 	border-radius: 5px;
@@ -50,6 +53,18 @@ a.buttons{
 }
 .text-input:focus {
 	border: 2px solid #8fbdec;
+}
+.text-input + label {
+	display: none;
+}
+.text-input:focus + label {
+	display: block;
+	position: absolute;
+	top: -15px; 
+	left: 16px;
+	color: #5b9ddf;
+	font-size: 11px;
+	line-height: 13px;
 }
 .text-input::-webkit-input-placeholder, .text-input::-moz-placeholder, .text-input:-moz-placeholder, .text-input:-ms-input-placeholder {
 	color: #999999;
