@@ -799,6 +799,10 @@ a.buttons{
 	font-size: 16px;
 	line-height: 22px;
 }
+.newsletter-form .input-container {
+	width: 368px;	
+	float: left;
+}
 .newsletter-form input {
 	height: 44px;
 	width: 368px;
