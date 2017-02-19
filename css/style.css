@@ -909,6 +909,7 @@ a.buttons{
 	padding: 16px 24px 24px 26px;
 	background-color: #f8f7f4;
 	border-radius: 10px;
+	display: none;
 }
 .popup-feedback h2 {
 	color: #323232;
@@ -945,7 +946,6 @@ a.buttons{
 	background-color: transparent;
 	background-image: url("../img/popup-close.png");
 	background-repeat: no-repeat;
-	display: none;
 }
 .breadcrumbs {
 	padding-top: 23px;
