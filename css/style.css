@@ -1436,7 +1436,7 @@ a.buttons{
 	border-radius: 50%;
 }
 .social-button:hover {
-	border: 2px solid #dae2de;
+	background-image: url("../img/social-networks-icons-hover-sprite.png");
 }
 .social-button:active {
 	box-shadow: 0px 2px 1px 0px rgba(136, 136, 136, 1) inset;
@@ -1444,13 +1444,25 @@ a.buttons{
 .twitter {
 	background-position: -5px -53px;
 }
+.twitter:hover {
+	background-position: -5px -53px;
+}
 .instagram {
+	background-position: -53px -5px;
+}
+.instagram:hover {
 	background-position: -53px -5px;
 }
 .facebook {
 	background-position: -5px -5px;
 }
+.facebook:hover {
+	background-position: -5px -5px;
+}
 .vkontakte {
+	background-position: -53px -53px;
+}
+.vkontakte:hover {
 	background-position: -53px -53px;
 }
 .footer-navigation{
