@@ -588,7 +588,7 @@ a.buttons{
 }
 .banners {
 	/*outline: 1px solid red;*/
-	margin-bottom: 40px;
+	margin-bottom: 10px;
 }
 .banners h2 {
 	margin: 0;
@@ -645,53 +645,19 @@ a.buttons{
 }
 .bestsellers {
 	/*outline: 1px solid red;*/
-	margin-bottom: 36px;
+	margin-bottom: 28px;
+	margin-left: -13px;
+	margin-right: -16px;
 }
-.bestseller-item {
-	/*outline: 1px solid orange;*/
-	min-height: 325px;
-	width: 267px;
-	float: left;
-	margin-right: 26px;
-	position: relative;
-	text-align: center;
-}
-.bestseller-item::before {
+.bestseller::before {
 	content:"";
 	width: 61px;
 	height: 61px;
 	background-image: url("../img/hit.png");
 	position: absolute;
-	top: 0;
-	left: 0;
+	top: 5px;
+	left: 13px;
 	z-index: 1;
-}
-.bestseller-item .price {
-	color: #ffffff;
-	font-size: 45px;
-	line-height: 45px;
-	font-weight: 700;
-	display: block;
-	position: absolute;
-	top: 165px;
-}
-.bestseller-item .price-for {
-	color: #ffffff;
-	font-size: 30px;
-	line-height: 45px;
-	font-weight: 700;
-}
-.bestseller-item-name {
-	color: #ffffff;
-	font-size: 16px;
-	line-height: 22px;
-	font-weight: 500;
-}
-.bestseller-item-name:hover, .bestseller-item-name:active {
-	color: #ffbc9e;
-}
-.bestseller-item:nth-child(4n){
-	margin-right: 0px;
 }
 .item-image {
 	width: 267px;
@@ -714,7 +680,7 @@ a.buttons{
 }
 .about-us {
 	margin-bottom: 40px;	
-	padding: 24px 20px 12px 20px;
+	padding: 24px 20px 8px 20px;
 	background-color: white;
 	background-image: url("../img/waffle-pattern.jpg");
 	background-repeat: repeat;
