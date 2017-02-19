@@ -68,7 +68,7 @@ a.buttons{
 }
 .text-input::-webkit-input-placeholder, .text-input::-moz-placeholder, .text-input:-moz-placeholder, .text-input:-ms-input-placeholder {
 	color: #999999;
-	font-weight: 400;
+	font-weight: normal;
 }
 :focus::-webkit-input-placeholder {
 	color: transparent;
@@ -898,6 +898,55 @@ a.buttons{
 	padding: 10px 27px;
 	margin-top: 18px;
 }
+.popup-feedback {
+	position: absolute;
+	z-index: 50;
+	top: 337px;
+	left: 50%;
+	width: 478px;
+	height: 443px;
+	margin-left: -239px;
+	padding: 16px 24px 24px 26px;
+	background-color: #f8f7f4;
+	border-radius: 10px;
+}
+.popup-feedback h2 {
+	color: #323232;
+	font-size: 24px;
+	line-height: 28px;
+	font-weight: 700;
+	margin: 0;
+	margin-bottom: 20px;
+}
+.popup-feedback input {
+	width: 267px;
+	height: 44px;
+	margin-bottom: 20px;
+}
+.popup-feedback textarea {
+	width: 428px;
+	height: 155px;
+	margin-bottom: 20px;
+}
+.popup-feedback .buttons {
+	display: block;
+	float: right;
+	width: 138px;
+}
+.popup-close {
+	content:"";
+	position: absolute;
+	right: 8px;
+	top: 8px;
+	width: 18px;
+	height: 17px;
+	font-size: 0;
+	border: none;
+	background-color: transparent;
+	background-image: url("../img/popup-close.png");
+	background-repeat: no-repeat;
+	display: none;
+}
 .breadcrumbs {
 	padding-top: 23px;
 }
@@ -1463,7 +1512,4 @@ a.buttons{
 }
 .copyright a:hover, .copyright a:active {
 	color: #ffbc9e;
-}
-.popup-feedback {
-	display: none;
 }
