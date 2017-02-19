@@ -1196,6 +1196,9 @@ a.buttons{
 .fieldset-fat label:hover::before {
 	border: 3px solid #f8f7f4;
 }
+.fieldset-fat .sorting-input-container {
+	padding-right: 0;
+}
 .fieldset-filler{
 	width: 703px;
 	float: left;
@@ -1208,7 +1211,7 @@ a.buttons{
 }
 .fieldset-filler .sorting-input-container{
 	padding-top: 11px;
-	padding-right: 5px;
+	padding-right: 0;
 	width: 702px;
 }
 .checkbox {
