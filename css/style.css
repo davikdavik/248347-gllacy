@@ -75,17 +75,17 @@ a.buttons{
 	font-size: 14px;
 	font-weight: normal;
 }
- .text-input::-moz-placeholder {
+.text-input::-moz-placeholder {
 	color: #999999;
 	font-size: 14px;
 	font-weight: normal;
- }
- .text-input:-moz-placeholder {
+}
+.text-input:-moz-placeholder {
 	color: #999999;
 	font-size: 14px;
 	font-weight: normal;
- }
- .text-input:-ms-input-placeholder {
+}
+.text-input:-ms-input-placeholder {
 	color: #999999;
 	font-size: 14px;
 	font-weight: normal;
