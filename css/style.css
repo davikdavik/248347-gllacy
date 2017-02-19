@@ -70,7 +70,22 @@ a.buttons{
 	font-size: 11px;
 	line-height: 13px;
 }
-.text-input::-webkit-input-placeholder, .text-input::-moz-placeholder, .text-input:-moz-placeholder, .text-input:-ms-input-placeholder {
+.text-input::-webkit-input-placeholder {
+	color: #999999;
+	font-size: 14px;
+	font-weight: normal;
+}
+ .text-input::-moz-placeholder {
+	color: #999999;
+	font-size: 14px;
+	font-weight: normal;
+ }
+ .text-input:-moz-placeholder {
+	color: #999999;
+	font-size: 14px;
+	font-weight: normal;
+ }
+ .text-input:-ms-input-placeholder {
 	color: #999999;
 	font-size: 14px;
 	font-weight: normal;
@@ -1319,6 +1334,12 @@ a.buttons{
 	font-weight: 700;
 }
 .catalog-item-name {
+	margin-right: 6px;
+	margin-left: 6px;
+	margin-bottom: 0;
+	margin-top: 0;
+}
+.catalog-item-name a {
 	color: #ffffff;
 	font-size: 16px;
 	line-height: 22px;
@@ -1327,8 +1348,9 @@ a.buttons{
 	border-bottom: 1px solid #b0c0b7;
 	padding-bottom: 1px;
 }
-.catalog-item-name:hover, .catalog-item-name:active {
+.catalog-item-name a:hover, .catalog-item-name a:active {
 	color: #ffbc9e;
+	border-bottom: 1px solid #ffbc9e;
 }
 .catalog-item:nth-child(4n){
 	margin-right: 0px;
