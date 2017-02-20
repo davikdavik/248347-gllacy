@@ -785,7 +785,6 @@ a.buttons{
 	padding: 22px 20px;
 	background-color: #ffffff;
 	background-image: url("../img/blogpost-background.jpg");
-	background-repeat: no-repeat;
 	border-radius: 16px;
 }
 .blogpost h3 {
@@ -861,6 +860,7 @@ a.buttons{
 	left: 870px;
 	background-color: #f7f6f3;
 	border-radius: 10px;
+	overflow: hidden;
 }
 .map-block-contacts span {
 	display: block;
