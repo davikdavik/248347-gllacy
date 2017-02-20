@@ -675,6 +675,7 @@ a.buttons{
 	padding: 17px 15px 17px 20px;
 	background-color: #6a1832;
 	background-image: url("../img/banner-left.jpg");
+	background-repeat: repeat;
 	border-radius: 16px;
 	position: relative;
 }
@@ -685,6 +686,7 @@ a.buttons{
 	padding: 17px 20px;
 	background-color: #4f2c1f;
 	background-image: url("../img/banner-right.jpg");
+	background-repeat: repeat;
 	border-radius: 16px;
 	position: relative;
 }
@@ -789,6 +791,7 @@ a.buttons{
 	padding: 22px 20px;
 	background-color: #ffffff;
 	background-image: url("../img/blogpost-background.jpg");
+	background-repeat: repeat;
 	border-radius: 16px;
 }
 .blogpost h3 {
