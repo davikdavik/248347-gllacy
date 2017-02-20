@@ -1,6 +1,6 @@
 var open_feedback_link = document.querySelector(".open-feedback");
 var overlay = document.querySelector(".popup-overlay");
-var close = popup.querySelector(".popup-close");
+var close = overlay.querySelector(".popup-close");
 var focus_field = popup.querySelector("[name=user-name]");
 
 		
