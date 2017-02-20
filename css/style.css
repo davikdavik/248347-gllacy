@@ -305,16 +305,16 @@ a.buttons{
 	display: block;
 	width: 17px;
 	height: 17px;
-	background-position: -36px -5px;
-	background-image: url("../img/user-block-sprite.png");
+	background-position: -171px -101px;
+	background-image: url("../img/img-spritesheet.png");
 	position: absolute;
 	right: 8px;
 	top: 8px;
 	z-index: 10;
 }
 .search-block:hover .search::after {
-	background-position: -36px -5px;
-	background-image: url("../img/user-block-hover-sprite.png");
+	background-position: -198px -101px;
+	background-image: url("../img/img-spritesheet.png");
 	position: absolute;
 	right: 8px;
 	top: 8px;
@@ -354,16 +354,16 @@ a.buttons{
 	display: block;
 	width: 21px;
 	height: 19px;
-	background-position: -36px -32px;
-	background-image: url("../img/user-block-sprite.png");
+	background-position: -192px -128px;
+	background-image: url("../img/img-spritesheet.png");
 	position: absolute;
 	left: 27px;
 	top: 6px;
 	z-index: 10;
 }
 .sign-in-block:hover .sign-in::after {
-	background-position: -36px -32px;
-	background-image: url("../img/user-block-hover-sprite.png");
+	background-position: -223px -128px;
+	background-image: url("../img/img-spritesheet.png");
 	position: absolute;
 	left: 27px;
 	top: 5px;
@@ -430,7 +430,7 @@ a.buttons{
 	width: 21px;
 	height: 19px;
 	background-position: -5px -5px;
-	background-image: url("../img/user-block-sprite.png");
+	background-image: url("../img/img-spritesheet.png");
 	position: absolute;
 	left: 27px;
 	top: 6px;
@@ -448,8 +448,8 @@ a.buttons{
 	display: block;
 	width: 21px;
 	height: 19px;
-	background-position: -5px -5px;
-	background-image: url("../img/user-block-hover-sprite.png");
+	background-position: -36px -5px;
+	background-image: url("../img/img-spritesheet.png");
 	position: absolute;
 	left: 27px;
 	top: 5px;
@@ -489,7 +489,8 @@ a.buttons{
 	height: 11px;
 	text-decoration: none;
 	font-size: 0;
-	background-image: url("../img/cart-item-delete.png");
+	background-image: url("../img/img-spritesheet.png");
+	background-position: -67px -5px;
 	background-repeat: no-repeat;
 	margin-right: 14px;
 	margin-top: 9px;
@@ -699,7 +700,9 @@ a.buttons{
 	content:"";
 	width: 61px;
 	height: 61px;
-	background-image: url("../img/hit.png");
+	background-image: url("../img/img-spritesheet.png");
+	background-position: -121px -134px;
+	background-repeat: no-repeat;
 	position: absolute;
 	top: 5px;
 	left: 13px;
@@ -754,23 +757,23 @@ a.buttons{
 	content: "";
 	width: 49px;
 	height: 49px;
-	background-image: url("../img/feature-item-sprite.png");
+	background-image: url("../img/img-spritesheet.png");
 	background-repeat: no-repeat;
 	position: absolute;
 	left: 0px;
 	top: -3px;
 }
 .icon1::before {
-	background-position: -5px -5px;
+	background-position: -53px -75px;
 }
 .icon2::before {
-	background-position: -5px -64px;
+	background-position: -112px -75px;
 }
 .icon3::before {
-	background-position: -64px -5px;
+	background-position: -5px -134px;
 }
 .icon4::before {
-	background-position: -63px -64px;
+	background-position: -63px -134px;
 }
 .feature-item:nth-child(2n+1){
 	margin-right: 24px;
@@ -979,7 +982,8 @@ a.buttons{
 	font-size: 0;
 	border: none;
 	background-color: transparent;
-	background-image: url("../img/popup-close.png");
+	background-image: url("../img/img-spritesheet.png");
+	background-position: -225px -101px;
 	background-repeat: no-repeat;
 	cursor: pointer;
 }
@@ -1532,39 +1536,39 @@ a.buttons{
 	height: 38px;
 	font-size: 0;
 	margin-right: 12px;
-	background-image: url("../img/social-networks-icons-sprite.png");
+	background-image: url("../img/img-spritesheet.png");
 	background-repeat: no-repeat;
 	border-radius: 50%;
 }
 .social-button:hover {
-	background-image: url("../img/social-networks-icons-hover-sprite.png");
+	background-image: url("../img/img-spritesheet.png");
 }
 .social-button:active {
 	box-shadow: 0px 2px 1px 0px rgba(136, 136, 136, 1) inset;
 }
 .twitter {
-	background-position: -5px -53px;
+	background-position: -192px -157px;
 }
 .twitter:hover {
-	background-position: -5px -53px;
+	background-position: -5px -205px;
 }
 .instagram {
-	background-position: -53px -5px;
+	background-position: -212px -5px;
 }
 .instagram:hover {
-	background-position: -53px -5px;
+	background-position: -212px -53px;
 }
 .facebook {
-	background-position: -5px -5px;
+	background-position: -164px -27px;
 }
 .facebook:hover {
-	background-position: -5px -5px;
+	background-position: -5px -75px;
 }
 .vkontakte {
-	background-position: -53px -53px;
+	background-position: -53px -205px;
 }
 .vkontakte:hover {
-	background-position: -53px -53px;
+	background-position: -101px -205px;
 }
 .footer-navigation{
 	min-height: 83px;
@@ -1604,7 +1608,9 @@ a.buttons{
 	content: "";
 	width: 15px;
 	height: 13px;
-	background-image: url("../img/heart.png");
+	background-image: url("../img/img-spritesheet.png");
+	background-position: -171px -75px;
+	background-repeat: no-repeat;
 	position: absolute;
 	left: 109px;
 	top: 0;
