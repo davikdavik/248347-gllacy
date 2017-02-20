@@ -850,6 +850,9 @@ a.buttons{
 }
 .map {
 	height: 430px;
+	background-image: url("../img/map-static.png");
+	background-repeat: no-repeat;
+	background-position: center;
 }
 .map-block-contacts {
 	width: 303px;
