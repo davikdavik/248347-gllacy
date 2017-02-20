@@ -905,6 +905,16 @@ a.buttons{
 	padding: 10px 27px;
 	margin-top: 18px;
 }
+
+@keyframes move {
+	0%   {
+		transform: translateY(-5%);
+	}
+
+	100% {
+		transform: translateY(0);
+	}
+}
 .popup-overlay {
 	position: fixed;
 	z-index: 50;
@@ -968,6 +978,7 @@ a.buttons{
 }
 .modal-content-show {
 	display: block;
+	animation: move 0.3s;
 }
 .breadcrumbs {
 	padding-top: 23px;
