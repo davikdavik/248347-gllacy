@@ -213,6 +213,7 @@ a.buttons{
 	padding: 0;
 	background-color: #f8f7f4;
 	border-radius: 5px;
+	box-shadow: 0px 20px 20px 0px rgba(0, 0, 0, 0.4); 
 	z-index: 5;
 	overflow: hidden;
 }
@@ -326,6 +327,7 @@ a.buttons{
 	display: none;
 	background: #f8f7f4;
 	border-radius: 5px;
+	box-shadow: 0px 20px 20px 0px rgba(0, 0, 0, 0.4); 
 	width: 342px;
 	height: 85px;
 	padding: 20px 17px;
@@ -374,6 +376,7 @@ a.buttons{
 	display: none;
 	background: #f8f7f4;
 	border-radius: 5px;
+	box-shadow: 0px 20px 20px 0px rgba(0, 0, 0, 0.4); 
 	width: 277px;
 	height: 216px;
 	padding: 20px;
@@ -459,6 +462,7 @@ a.buttons{
 	display: none;
 	background: #f8f7f4;
 	border-radius: 5px;
+	box-shadow: 0px 20px 20px 0px rgba(0, 0, 0, 0.4); 
 	width: 540px;
 	min-height: 243px;
 	padding: 20px 15px 17px 17px;
