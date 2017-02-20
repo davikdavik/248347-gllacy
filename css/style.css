@@ -633,7 +633,6 @@ a.buttons{
 	background-color: #ffffff;
 }
 .banners {
-	/*outline: 1px solid red;*/
 	margin-bottom: 10px;
 }
 .banners h2 {
@@ -745,7 +744,6 @@ a.buttons{
 	margin-bottom: 10px;
 }
 .feature-item {
-	/*outline: 1px solid green;*/
 	width: 540px;
 	float: left;
 	padding-left: 60px;
@@ -1048,7 +1046,7 @@ a.buttons{
 	font-size: 16px;
 	line-height: 18px;
 	-webkit-appearance: none;
-	-moz-appearance: none;
+  	-moz-appearance: none;
 	appearance: none;
 	cursor: pointer;
 }
