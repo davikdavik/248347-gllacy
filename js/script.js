@@ -3,7 +3,7 @@ var popup = document.querySelector(".popup-overlay");
 var close = popup.querySelector(".popup-close");
 var focus_field = popup.querySelector("[name=user-name]");
 
-		
+
 open_feedback_link.addEventListener("click", function(event) {
 	event.preventDefault();
 	popup.classList.add("modal-content-show");

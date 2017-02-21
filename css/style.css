@@ -612,15 +612,22 @@ a.buttons{
 	background-color: #849d8f;
 	background-image: url("../img/slider-image1.png");
 }
-
 #btn-2:checked ~ .site-container{
 	background-color: #8996a6;
 	background-image: url("../img/slider-image2.png");
 }
-
 #btn-3:checked ~ .site-container {
 	background-color: #9d8b84;
 	background-image: url("../img/slider-image3.png");
+}
+#btn-1:checked ~ .site-container .user-block-item>a {
+	background-color: #9db1a5;
+}
+#btn-2:checked ~ .site-container .user-block-item>a {
+	background-color: #a1abb8;
+}
+#btn-3:checked ~ .site-container .user-block-item>a {
+	background-color: #b1a29d;
 }
 #btn-1:checked ~ .site-container #slide1,
 #btn-2:checked ~ .site-container #slide2,
@@ -765,10 +772,10 @@ a.buttons{
 	background-position: -53px -75px;
 }
 .icon2::before {
-	background-position: -112px -75px;
+	background-position: -5px -134px;
 }
 .icon3::before {
-	background-position: -5px -134px;
+	background-position: -112px -75px;
 }
 .icon4::before {
 	background-position: -63px -134px;
@@ -871,7 +878,7 @@ a.buttons{
 	left: 870px;
 	background-color: #f7f6f3;
 	border-radius: 10px;
-	overflow: hidden;
+	/*overflow: hidden;*/
 }
 .map-block-contacts span {
 	display: block;
@@ -908,10 +915,15 @@ a.buttons{
 }
 .map-block .buttons {
 	display: block;
-	float: right;
+	float: left;
+	min-width: 253px;
 	text-align: center;
-	padding: 10px 27px;
-	margin-top: 18px;
+	padding: 10px 24px;
+	margin-top: 25px;
+}
+.map-block-contacts-text {
+	max-height: 200px;
+	overflow: hidden;
 }
 
 @keyframes move {
@@ -1046,7 +1058,7 @@ a.buttons{
 	font-size: 16px;
 	line-height: 18px;
 	-webkit-appearance: none;
-  	-moz-appearance: none;
+	-moz-appearance: none;
 	appearance: none;
 	cursor: pointer;
 }
@@ -1255,6 +1267,9 @@ a.buttons{
 .radio-button:disabled + label:hover::before {
 	border: 2px solid #b2c1b7;
 }
+.radio-button:disabled + label {
+	cursor: default;
+}
 .fieldset-fat .sorting-input-container {
 	padding-right: 0;
 }
@@ -1313,18 +1328,21 @@ a.buttons{
 	left: 4px;
 	width: 12px;
 	height: 12px;
-	background-image: url("../img/checkbox-checked.png");
+	background-image: url("../img/img-spritesheet.png");
 	background-repeat: no-repeat;
-	background-position: center center;
+	background-position: -164px -5px;
 }
 .checkbox + label:hover::before {
 	border: 2px solid #f8f7f4;
+}
+.checkbox:disabled + label {
+	cursor: default;
 }
 .checkbox:disabled + label::before {
 	border: 1px solid #b5c4bc;
 }
 .checkbox:disabled + label::after {
-	background-image: url("../img/checkbox-disabled.png");
+	background-position: -186px -5px;
 }
 .sorting-button{
 	height: 36px;
